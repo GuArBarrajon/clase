@@ -48,14 +48,16 @@ class prin{
             monto = Convert.ToDouble(Console.ReadLine());
         }catch(Exception E){
                 Console.WriteLine("Ingrese un número: ");
-        }monto = 0;
+                monto = 0;
+        }
         cuenta1.Depositar(monto);
         Console.Write("Ingrese la cantidad a depositar en la cuenta premium: ");
         try{
             monto = Convert.ToDouble(Console.ReadLine());
         }catch(Exception E){
                 Console.WriteLine("Ingrese un número: ");
-        }monto = 0;
+                monto = 0;
+        }
         cuenta2.Depositar(monto);
         Console.WriteLine("Saldo de la primera cuenta: " + cuenta1.verSaldo());
         Console.WriteLine("Saldo de la segunda cuenta: " + cuenta2.verSaldo());
@@ -64,7 +66,8 @@ class prin{
             monto = Convert.ToDouble(Console.ReadLine());
         }catch(Exception e){
                 Console.WriteLine(e.Message);
-        }monto = 0;
+                monto = 0;
+        }
         cuenta1.Extraer(monto);
         Console.WriteLine("Saldo de la primera cuenta: " + cuenta1.verSaldo());
         Console.WriteLine("Saldo de la segunda cuenta: " + cuenta2.verSaldo());
